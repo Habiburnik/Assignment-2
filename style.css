@@ -491,6 +491,9 @@ footer ul li a {
     justify-content: space-between;
     padding-bottom: 50px;
 }
+.footer-details{
+    width: 60%;
+}
 
 .footer-top div {
     margin-right: 40px;
@@ -637,6 +640,10 @@ footer hr {
 
     .card-trainer {
         width: 100%;
+    }
+
+    .footer-details{
+        width: 90%;
     }
 
 }
