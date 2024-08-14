@@ -297,21 +297,20 @@ body {
 }
 
 /*  BMI Calculator */
+
+.bmi-calculator{
+    margin-top: 50px;
+}
 .bmi-header {
     text-align: center;
 }
 
 .calculator {
-    height: 500px;
+    height: 100%;
     background-color: rgb(34, 34, 34);
     display: flex;
-    padding: 2.5% 10% 0% 10%;
+    padding: 2.5% 10% 3% 10%;
     justify-content: space-between;
-}
-
-.bmi-calculator {
-    color: white;
-
 }
 
 table {
@@ -331,19 +330,55 @@ td {
     color: rgba(255, 255, 255, 0.5);
 }
 
+th{
+    color: rgba(255, 255, 255, 0.9);
+}
+
 .calculator h3 {
     font-size: 28px;
     font-weight: 900;
     line-height: 250%;
+    color: white;
 
 }
 
 .input-section {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 2fr;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    padding-bottom: 50px;
 }
 
+
+.input-section input,select {
+    font-size: 1rem;
+    height: 55px;
+    width: 100%;
+    border-radius: 8px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border: none;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.input-section input{
+    line-height: 0;
+    padding-left: 15px;
+    width: 95%;
+}
+
+
+.input-section select {
+    padding: 10px;
+}
+
+.input-section input::placeholder {
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 1rem;
+}
+
+.activity{
+    grid-column: span 2;
+}
 
 /* Meet our team */
 
@@ -525,7 +560,8 @@ footer hr {
 
     .hero-container,
     .card-container,
-    .footer-top {
+    .footer-top,
+    .calculator {
         flex-direction: column;
     }
 
@@ -602,4 +638,5 @@ footer hr {
     .card-trainer {
         width: 100%;
     }
+
 }
