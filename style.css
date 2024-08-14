@@ -174,9 +174,10 @@ body {
 .workout-video>h4 {
     color: rgb(255, 255, 255);
     font-family: Inter;
-    font-size: 40px;
+    font-size: 1.8rem;
     font-weight: 900;
     padding-top: 20px;
+    line-height: 30px;
 }
 
 .video-tutorial {
@@ -202,9 +203,10 @@ body {
 .video-tutorial h4 {
     color: rgb(250, 250, 249);
     font-family: Inter;
-    font-size: 24px;
+    font-size: 1.5rem;
     font-weight: 900;
     padding-top: 20px;
+    line-height: 30px;
 }
 
 .circle {
@@ -267,7 +269,7 @@ body {
     background: rgb(34, 34, 34);
 }
 
-.details{
+.details {
     width: 50%;
     padding: 1% 8% 0% 8%;
     display: flex;
@@ -294,6 +296,187 @@ body {
     background-color: yellow;
 }
 
+/*  BMI Calculator */
+.bmi-header {
+    text-align: center;
+}
+
+.calculator {
+    height: 500px;
+    background-color: rgb(34, 34, 34);
+    display: flex;
+    padding: 2.5% 10% 0% 10%;
+    justify-content: space-between;
+}
+
+.bmi-calculator {
+    color: white;
+
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+    margin-top: 20px;
+}
+
+th,
+td {
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    padding: 15px;
+    text-align: left;
+}
+
+td {
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.calculator h3 {
+    font-size: 28px;
+    font-weight: 900;
+    line-height: 250%;
+
+}
+
+.input-section {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 2fr;
+}
+
+
+/* Meet our team */
+
+.card-trainer-title {
+    color: white;
+    padding: 0 0 0 20px;
+    font-size: 1.5rem;
+    font-weight: 750;
+    line-height: 12px;
+}
+
+.card-trainer-description {
+    color: white;
+    padding: 10px 0 15px 20px;
+    opacity: 0.5;
+}
+
+.meet-our-team {
+    margin: 2.5% 10% 0% 10%;
+    margin-top: 50px;
+    height: 1000px;
+    text-align: center;
+}
+
+.card-container-trainer {
+    display: grid;
+    grid-template-columns: 300px;
+    grid-template-rows: 375px;
+    gap: 40px;
+    grid-template-columns: repeat(3, 1fr);
+    border-radius: 18px;
+    height: 790px;
+    background: rgb(34, 34, 34);
+    padding: 26px 30px;
+}
+
+.trainer1 {
+    background-image: url('images/trainer1.png');
+}
+
+.trainer2 {
+    background-image: url('images/trainer2.png');
+}
+
+.trainer3 {
+    background-image: url('images/trainer3.png');
+}
+
+.trainer4 {
+    background-image: url('images/trainer4.png');
+}
+
+.trainer5 {
+    background-image: url('images/trainer5.png');
+}
+
+.trainer6 {
+    background-image: url('images/trainer6.png');
+}
+
+.card-trainer {
+    display: flex;
+    align-items: flex-start;
+    justify-content: end;
+    flex-direction: column;
+    width: 450px;
+    height: 375px;
+    border-radius: 18px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: rgba(0, 0, 0, 0.3);
+    background-blend-mode: overlay;
+    background-position: center;
+}
+
+/* Footer */
+
+footer {
+    padding: 2.5% 10% 0% 10%;
+    background-color: rgb(34, 34, 34);
+    margin-top: 70px;
+}
+
+footer .title {
+    font-size: 5rem;
+}
+
+footer h4 {
+    color: rgb(255, 255, 255);
+    font-family: Inter;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 150%;
+    padding-bottom: 30px;
+}
+
+footer ul li {
+    list-style: none;
+}
+
+footer ul li a {
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 1.5rem;
+    line-height: 50px;
+}
+
+.footer-top {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 50px;
+}
+
+.footer-top div {
+    margin-right: 40px;
+}
+
+footer hr {
+    opacity: 0.5;
+
+}
+
+.get-started {
+    width: 200px;
+
+}
+
+.footer-right {
+    text-align: center;
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 1.4rem;
+    padding: 30px 0;
+}
 
 
 @media screen and (max-width : 576px) {
@@ -341,7 +524,8 @@ body {
     }
 
     .hero-container,
-    .card-container {
+    .card-container,
+    .footer-top {
         flex-direction: column;
     }
 
@@ -377,28 +561,45 @@ body {
         width: 100%;
     }
 
-    .extra-mile{
-        height: 600px;
+    .extra-mile {
+        height: 550px;
         flex-direction: column;
         align-items: center;
     }
-    .img-container{
+
+    .img-container {
         height: 95%;
         width: 95%;
     }
-    .details{
+
+    .details {
         width: 80%;
         padding-top: 20px;
     }
-    .section-title{
-        font-size: 2rem ;
-    }
-    .details>.btn-primary{
-        width: 100%;
-    }
-    .extra-mile>.img-container{
-        width: 90%;
-        
+
+    .section-title {
+        font-size: 2rem;
     }
 
+    .details>.btn-primary {
+        width: 100%;
+    }
+
+    .extra-mile>.img-container {
+        width: 90%;
+        padding-bottom: 15px;
+    }
+
+    .card-container-trainer {
+        grid-template-columns: repeat(1, 1fr);
+        height: 2500px;
+    }
+
+    .meet-our-team {
+        height: 2680px;
+    }
+
+    .card-trainer {
+        width: 100%;
+    }
 }
